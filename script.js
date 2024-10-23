@@ -8,15 +8,3 @@ document.getElementById('cadastroForm').addEventListener('submit', function(even
     // Cria uma nova linha na tabela
     const tabela = document.getElementById('tabelaUsuarios').querySelector('tbody');
     const novaLinha = tabela.insertRow();
-
-    // Insere as células na linha
-    const celulaNome = novaLinha.insertCell(0);
-    const celulaEmail = novaLinha.insertCell(1);
-
-    // Preenche as células com os dados do formulário
-    celulaNome.textContent = nome;
-    celulaEmail.textContent = email;
-    
-    // Limpa o formulário
-    document.getElementById('cadastroForm').reset();
-});
